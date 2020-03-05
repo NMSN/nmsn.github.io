@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>bug解决方案 | NMSN</title>
+    <meta name="description" content="Somebody has to win, so why not be me?">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/favicon.ico">
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6594ba1364804631f0a8fd4452766fed";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  <script aysnc="true" src="https://www.googletagmanager.com/gtag/js?id=UA-127895888-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-127895888-1');
+  </script>
+    
+    <link rel="preload" href="/assets/css/0.styles.f2223a60.css" as="style"><link rel="preload" href="/assets/js/app.c3225605.js" as="script"><link rel="preload" href="/assets/js/2.e13b9131.js" as="script"><link rel="preload" href="/assets/js/38.fd702383.js" as="script"><link rel="prefetch" href="/assets/js/10.699d93ea.js"><link rel="prefetch" href="/assets/js/11.d33682b1.js"><link rel="prefetch" href="/assets/js/12.6cc68d46.js"><link rel="prefetch" href="/assets/js/13.12884a45.js"><link rel="prefetch" href="/assets/js/14.6c65ab66.js"><link rel="prefetch" href="/assets/js/15.80e49c50.js"><link rel="prefetch" href="/assets/js/16.13996fb0.js"><link rel="prefetch" href="/assets/js/17.856147aa.js"><link rel="prefetch" href="/assets/js/18.6aa94cc8.js"><link rel="prefetch" href="/assets/js/19.8e9ef53c.js"><link rel="prefetch" href="/assets/js/20.271d29a2.js"><link rel="prefetch" href="/assets/js/21.a7e3b49c.js"><link rel="prefetch" href="/assets/js/22.e5ddfe6d.js"><link rel="prefetch" href="/assets/js/23.7d63bbc6.js"><link rel="prefetch" href="/assets/js/24.967f099e.js"><link rel="prefetch" href="/assets/js/25.5c0fae9d.js"><link rel="prefetch" href="/assets/js/26.850e345c.js"><link rel="prefetch" href="/assets/js/27.e93ec054.js"><link rel="prefetch" href="/assets/js/28.7340d98f.js"><link rel="prefetch" href="/assets/js/29.926503fd.js"><link rel="prefetch" href="/assets/js/3.aadb7b90.js"><link rel="prefetch" href="/assets/js/30.5ba087e8.js"><link rel="prefetch" href="/assets/js/31.d04307a7.js"><link rel="prefetch" href="/assets/js/32.28e1fa5f.js"><link rel="prefetch" href="/assets/js/33.5ef93005.js"><link rel="prefetch" href="/assets/js/34.6d0d9aef.js"><link rel="prefetch" href="/assets/js/35.7e6c425c.js"><link rel="prefetch" href="/assets/js/36.6f9240f4.js"><link rel="prefetch" href="/assets/js/37.62bbda39.js"><link rel="prefetch" href="/assets/js/39.d55f99d8.js"><link rel="prefetch" href="/assets/js/4.2bfa0657.js"><link rel="prefetch" href="/assets/js/40.33ae5c78.js"><link rel="prefetch" href="/assets/js/41.c1486508.js"><link rel="prefetch" href="/assets/js/42.f2b8a537.js"><link rel="prefetch" href="/assets/js/5.123cc1c3.js"><link rel="prefetch" href="/assets/js/6.174c655b.js"><link rel="prefetch" href="/assets/js/7.9c366e38.js"><link rel="prefetch" href="/assets/js/8.77aa0be5.js"><link rel="prefetch" href="/assets/js/9.62aad265.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f2223a60.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">NMSN</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/tech/" class="nav-link">
+  快查总结
+</a></div><div class="nav-item"><a href="/excerpt/" class="nav-link">
+  摘录
+</a></div><div class="nav-item"><a href="/interviewQuestions/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/readingNotes/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/work/" class="nav-link router-link-active">
+  工作总结
+</a></div> <a href="https://github.com/nmsn" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/tech/" class="nav-link">
+  快查总结
+</a></div><div class="nav-item"><a href="/excerpt/" class="nav-link">
+  摘录
+</a></div><div class="nav-item"><a href="/interviewQuestions/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/readingNotes/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/work/" class="nav-link router-link-active">
+  工作总结
+</a></div> <a href="https://github.com/nmsn" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>工作总结</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/work/axios取消请求.html" class="sidebar-link">axios取消请求</a></li><li><a href="/work/axios文件处理.html" class="sidebar-link">axios文件处理</a></li><li><a href="/work/fetch.html" class="sidebar-link">fetch</a></li><li><a href="/work/dsBridge.html" class="sidebar-link">dsBridge</a></li><li><a href="/work/前端水印生成方案.html" class="sidebar-link">前端水印生成方案</a></li><li><a href="/work/移动端适配.html" class="sidebar-link">移动端适配</a></li><li><a href="/work/bug解决方案.html" class="active sidebar-link">bug解决方案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/work/bug解决方案.html#ios输入键盘隐藏后，没有正确渲染屏幕的问题" class="sidebar-link">ios输入键盘隐藏后，没有正确渲染屏幕的问题</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="bug解决方案"><a href="#bug解决方案" class="header-anchor">#</a> bug解决方案</h1> <h2 id="ios输入键盘隐藏后，没有正确渲染屏幕的问题"><a href="#ios输入键盘隐藏后，没有正确渲染屏幕的问题" class="header-anchor">#</a> ios输入键盘隐藏后，没有正确渲染屏幕的问题</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * iOS 12.1 开始，可能会出现输入键盘隐藏后，没有正确渲染屏幕的问题
+ */</span>
+document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>
+  <span class="token string">'blur'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 这里加了个类型判断，因为 a 等元素也会触发blur事件</span>
+    <span class="token keyword">switch</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>tagName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">case</span> <span class="token string">'INPUT'</span><span class="token operator">:</span>
+      <span class="token keyword">case</span> <span class="token string">'TEXTAREA'</span><span class="token operator">:</span>
+        document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">scrollIntoView</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">break</span>
+      <span class="token keyword">default</span><span class="token operator">:</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token boolean">true</span>
+<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2020-3-2 17:07:10</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/work/移动端适配.html" class="prev">
+        移动端适配
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.c3225605.js" defer></script><script src="/assets/js/2.e13b9131.js" defer></script><script src="/assets/js/38.fd702383.js" defer></script>
+  </body>
+</html>
