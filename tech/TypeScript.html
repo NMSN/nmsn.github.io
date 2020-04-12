@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TypeScript | NMSN</title>
+    <meta name="description" content="Somebody has to win, so why not be me?">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/favicon.ico">
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6594ba1364804631f0a8fd4452766fed";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  <script aysnc="true" src="https://www.googletagmanager.com/gtag/js?id=UA-127895888-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-127895888-1');
+  </script>
+    
+    <link rel="preload" href="/assets/css/0.styles.50d350bc.css" as="style"><link rel="preload" href="/assets/js/app.21b18097.js" as="script"><link rel="preload" href="/assets/js/2.b93ea75d.js" as="script"><link rel="preload" href="/assets/js/41.c12a26f9.js" as="script"><link rel="prefetch" href="/assets/js/10.7e92d290.js"><link rel="prefetch" href="/assets/js/11.4f409701.js"><link rel="prefetch" href="/assets/js/12.8ef108d6.js"><link rel="prefetch" href="/assets/js/13.5dcd4f93.js"><link rel="prefetch" href="/assets/js/14.0e9df204.js"><link rel="prefetch" href="/assets/js/15.ad852921.js"><link rel="prefetch" href="/assets/js/16.6faf876d.js"><link rel="prefetch" href="/assets/js/17.33f2b32d.js"><link rel="prefetch" href="/assets/js/18.4788b9d4.js"><link rel="prefetch" href="/assets/js/19.be735485.js"><link rel="prefetch" href="/assets/js/20.15576f09.js"><link rel="prefetch" href="/assets/js/21.ccc7884a.js"><link rel="prefetch" href="/assets/js/22.62d05ca5.js"><link rel="prefetch" href="/assets/js/23.6283b10b.js"><link rel="prefetch" href="/assets/js/24.f4f103b3.js"><link rel="prefetch" href="/assets/js/25.be777bd8.js"><link rel="prefetch" href="/assets/js/26.96f6dbff.js"><link rel="prefetch" href="/assets/js/27.8e592ca5.js"><link rel="prefetch" href="/assets/js/28.71991e65.js"><link rel="prefetch" href="/assets/js/29.4fdbdf45.js"><link rel="prefetch" href="/assets/js/3.d0b8f0c4.js"><link rel="prefetch" href="/assets/js/30.232b4b48.js"><link rel="prefetch" href="/assets/js/31.f22525dd.js"><link rel="prefetch" href="/assets/js/32.b3f0abcc.js"><link rel="prefetch" href="/assets/js/33.e0edd05c.js"><link rel="prefetch" href="/assets/js/34.e45048ee.js"><link rel="prefetch" href="/assets/js/35.a8449c49.js"><link rel="prefetch" href="/assets/js/36.7dacd2fc.js"><link rel="prefetch" href="/assets/js/37.f5498566.js"><link rel="prefetch" href="/assets/js/38.260a3326.js"><link rel="prefetch" href="/assets/js/39.18295e10.js"><link rel="prefetch" href="/assets/js/4.7d2de843.js"><link rel="prefetch" href="/assets/js/40.2bf21155.js"><link rel="prefetch" href="/assets/js/42.0b1f3a26.js"><link rel="prefetch" href="/assets/js/43.4d274438.js"><link rel="prefetch" href="/assets/js/44.1b124688.js"><link rel="prefetch" href="/assets/js/45.fd040ee0.js"><link rel="prefetch" href="/assets/js/46.172bf7ef.js"><link rel="prefetch" href="/assets/js/47.1f93fd6f.js"><link rel="prefetch" href="/assets/js/48.eaf606d3.js"><link rel="prefetch" href="/assets/js/49.34397ea8.js"><link rel="prefetch" href="/assets/js/5.d9463b82.js"><link rel="prefetch" href="/assets/js/50.97b02ae4.js"><link rel="prefetch" href="/assets/js/51.630397b5.js"><link rel="prefetch" href="/assets/js/52.f88a2455.js"><link rel="prefetch" href="/assets/js/53.3ebf21a3.js"><link rel="prefetch" href="/assets/js/6.6299bb6d.js"><link rel="prefetch" href="/assets/js/7.553b501c.js"><link rel="prefetch" href="/assets/js/8.f94726dc.js"><link rel="prefetch" href="/assets/js/9.6490efb0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.50d350bc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">NMSN</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tech/" class="nav-link router-link-active">
+  快查总结
+</a></div><div class="nav-item"><a href="/excerpt/" class="nav-link">
+  摘录
+</a></div><div class="nav-item"><a href="/interviewQuestions/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/readingNotes/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/work/" class="nav-link">
+  工作总结
+</a></div> <a href="https://github.com/nmsn" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tech/" class="nav-link router-link-active">
+  快查总结
+</a></div><div class="nav-item"><a href="/excerpt/" class="nav-link">
+  摘录
+</a></div><div class="nav-item"><a href="/interviewQuestions/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/readingNotes/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/work/" class="nav-link">
+  工作总结
+</a></div> <a href="https://github.com/nmsn" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>快查总结</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/Markdown.html" class="sidebar-link">Markdown常用语法</a></li><li><a href="/tech/Console.html" class="sidebar-link">Console方法详解</a></li><li><a href="/tech/Git.html" class="sidebar-link">Git相关介绍</a></li><li><a href="/tech/RegEx.html" class="sidebar-link">正则表达式</a></li><li><a href="/tech/Github.html" class="sidebar-link">Github</a></li><li><a href="/tech/JS继承.html" class="sidebar-link">JS继承</a></li><li><a href="/tech/前端性能优化之雅虎35条军规.html" class="sidebar-link">前端性能优化之雅虎35条军规</a></li><li><a href="/tech/排序算法.html" class="sidebar-link">排序算法</a></li><li><a href="/tech/代码实现.html" class="sidebar-link">代码实现</a></li><li><a href="/tech/ES6.html" class="sidebar-link">ES6</a></li><li><a href="/tech/TypeScript.html" class="active sidebar-link">TypeScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tech/TypeScript.html#ts中的内置类型" class="sidebar-link">TS中的内置类型</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="typescript"><a href="#typescript" class="header-anchor">#</a> TypeScript</h1> <h2 id="ts中的内置类型"><a href="#ts中的内置类型" class="header-anchor">#</a> TS中的内置类型</h2> <h3 id="常用关键字"><a href="#常用关键字" class="header-anchor">#</a> 常用关键字</h3> <h4 id="typeof"><a href="#typeof" class="header-anchor">#</a> typeof</h4> <p><code>typeof</code>可以获取值的类型</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token string">'1'</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">type</span> Foo <span class="token operator">=</span> <span class="token keyword">typeof</span> obj<span class="token punctuation">;</span> <span class="token comment">// { a: string }</span>
+</code></pre></div><h4 id="keyof"><a href="#keyof" class="header-anchor">#</a> keyof</h4> <p><code>keyof</code>可以用来取得一个对象接口的所有<code>key</code>值</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  age<span class="token operator">:</span> <span class="token builtin">number</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">type</span> <span class="token constant">T</span> <span class="token operator">=</span> <span class="token keyword">keyof</span> Person <span class="token comment">// -&gt; &quot;name&quot; | &quot;age&quot;</span>
+</code></pre></div><h4 id="in"><a href="#in" class="header-anchor">#</a> in</h4> <p><code>in</code>则可以遍历枚举类型</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  age<span class="token operator">:</span> <span class="token builtin">number</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">type</span> <span class="token constant">T</span> <span class="token operator">=</span> <span class="token keyword">keyof</span> Person <span class="token comment">// -&gt; &quot;name&quot; | &quot;age&quot;</span>
+</code></pre></div><h3 id="partial"><a href="#partial" class="header-anchor">#</a> Partial</h3> <p>Partial 作用是将传入的属性变为可选项</p> <p>源码如下</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> Keys <span class="token operator">=</span> <span class="token string">&quot;a&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;b&quot;</span>
+<span class="token keyword">type</span> Obj <span class="token operator">=</span>  <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>p <span class="token keyword">in</span> Keys<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span>
+<span class="token punctuation">}</span> <span class="token comment">// -&gt; { a: any, b: any }</span>
+</code></pre></div><p>Partial的实例</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> NewPerson <span class="token operator">=</span> Partial<span class="token operator">&lt;</span>Person<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 相当于</span>
+<span class="token keyword">interface</span> <span class="token class-name">NewPerson</span> <span class="token punctuation">{</span>
+    name<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>但是 Partial 有个局限性，就是只支持处理第一层的属性</p> <h3 id="required"><a href="#required" class="header-anchor">#</a> Required</h3> <p>Required 的作用是将传入的属性变为必选项, 源码如下</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> Required<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token punctuation">]</span><span class="token operator">-</span><span class="token operator">?</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>我们发现一个有意思的用法 -?, 这里很好理解就是将可选项代表的 ? 去掉, 从而让这个类型变成必选项. 与之对应的还有个+? , 这个含义自然与-?之前相反, 它是用来把属性变成可选项的.</p> <h3 id="readonly"><a href="#readonly" class="header-anchor">#</a> Readonly</h3> <p>将传入的属性变为只读选项, 源码如下</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> Readonly<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token keyword">readonly</span> <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="record"><a href="#record" class="header-anchor">#</a> Record</h3> <p>将 K 中所有的属性的值转化为 T 类型</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> Record<span class="token operator">&lt;</span><span class="token constant">K</span> <span class="token keyword">extends</span> <span class="token class-name">keyof</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token constant">T</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token constant">K</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="pick"><a href="#pick" class="header-anchor">#</a> Pick</h3> <p>从 T 中取出 一系列 K 的属性</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> Pick<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">K</span> <span class="token keyword">extends</span> <span class="token class-name">keyof</span> <span class="token constant">T</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token constant">K</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="exclude"><a href="#exclude" class="header-anchor">#</a> Exclude</h3> <p>Exclude 的作用是从 T 中找出 U 中没有的元素</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> Exclude<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">U</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name">U</span> <span class="token operator">?</span> <span class="token builtin">never</span> <span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="extract"><a href="#extract" class="header-anchor">#</a> Extract</h3> <p>根据源码我们推断出 Extract 的作用是提取出 T 包含在 U 中的元素, 换种更加贴近语义的说法就是从 T 中提取出 U
+源码如下</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> Extract<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">U</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name">U</span> <span class="token operator">?</span> <span class="token constant">T</span> <span class="token operator">:</span> <span class="token builtin">never</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="returntype"><a href="#returntype" class="header-anchor">#</a> ReturnType</h3> <p>在阅读源码之前我们需要了解一下 infer 这个关键字, 在条件类型语句中, 我们可以用 infer 声明一个类型变量并且对它进行使用,
+我们可以用它获取函数的返回类型， 源码如下</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> ReturnType<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token punctuation">(</span>
+  <span class="token parameter"><span class="token operator">...</span>args<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span>
+<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> infer <span class="token constant">R</span>
+  <span class="token operator">?</span> <span class="token constant">R</span>
+  <span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="thistype"><a href="#thistype" class="header-anchor">#</a> ThisType</h3> <p>用于指定上下文对象类型的</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> obj<span class="token operator">:</span> ThisType<span class="token operator">&lt;</span>Person<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">dosth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token comment">// string</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 这样的话，就可以指定 obj 里的所有方法里的上下文对象改成 Person 这个类型了</span>
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">dosth</span><span class="token punctuation">(</span><span class="token parameter"><span class="token keyword">this</span><span class="token operator">:</span> Person</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token comment">// string</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="nonnullable"><a href="#nonnullable" class="header-anchor">#</a> NonNullable</h3> <p>这个类型可以用来过滤类型中的 null 及 undefined 类型</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> NonNullable<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name">null</span> <span class="token operator">|</span> <span class="token keyword">undefined</span> <span class="token operator">?</span> <span class="token builtin">never</span> <span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h3> <ul><li>TS 中的内置类型简述：<a href="https://github.com/whxaxes/blog/issues/14" target="_blank" rel="noopener noreferrer">https://github.com/whxaxes/blog/issues/14<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/12/2020, 3:05:02 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tech/ES6.html" class="prev">
+        ES6
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.21b18097.js" defer></script><script src="/assets/js/2.b93ea75d.js" defer></script><script src="/assets/js/41.c12a26f9.js" defer></script>
+  </body>
+</html>
